@@ -124,6 +124,16 @@ Teaching materials and software for application of deep convolutional neural net
 
 * Goldstein, E. B., et al. (2022) Labels for Emergency Response Imagery from Hurricane Barry, Delta, Dorian, Florence, Ida, Isaias, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon (2.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7217621)
 
+* Buscombe, D., et al. (2022) Monthly CDIP:MOP-alongshore modeled wave statistics for California, January 2000 - July 2022 (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6946132
+
+* Buscombe, D., et al. (2022) Yearly CDIP:MOP-alongshore modeled wave statistics for California, January 2000 - July 2022 (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6946105
+
+* Buscombe, D., et al. (2022) Shoreline data at 30-m spatial resolution for 2001 coastal provinces or regions of the world, in geoJSON format. (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6917963
+
+* Buscombe, D., et al. (2022) Shoreline data at 30-m spatial resolution for 298 coastal counties of the conterminous USA, in geoJSON format. (v0.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7033367
+
+* Buscombe, D., et al. (2022) Labeled Images of Sand and Coins v2 (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6232246
+
 * Buscombe, D., et al. (2022) Preliminary Coastal Grain Size Portal (C-GRASP) dataset. Version 1, January 2022, Zenodo [link](https://zenodo.org/record/5874231#.YeeQbVuIbRZ)
 
 * Buscombe, D. (2022) Doodleverse/Segmentation Zoo Res-UNet models for identifying coins in photos of sediment. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6229579)
@@ -141,8 +151,6 @@ Teaching materials and software for application of deep convolutional neural net
 * Goldstein et al. (2022) Labels for Hurricane Florence (2018) Emergency Response Imagery from NOAA. 10.6084/m9.figshare.11604192.v1 [link](https://figshare.com/articles/dataset/Labels_for_Hurricane_Florence_2018_Emergency_Response_Imagery_from_NOAA/11604192)
 
 * Goldstein et al. (2022) Labels for Emergency Response Imagery from Hurricane Florence, Hurricane Michael, and Hurricane Isaias (Version 1.0) [link](http://doi.org/10.5281/zenodo.4272064)
-
-* other dataset links forthcoming ...
 
 
 ### Coast Train
