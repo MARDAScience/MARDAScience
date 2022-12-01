@@ -1,8 +1,8 @@
 # Marda Science
 
-We are a tiny science consultancy. We consist of Dr Daniel Buscombe and Dr Maria Campbell. Our [website](https://www.mardascience.com) is still under development but details some of the work that we do. This is the landing page for Dan's page of software repositories and datasets that concern projects in Machine Learning, Deep Learning, Remote Sensing, Computer Vision, Image Processing, and Geospatial analysis. It gives a more complete picture. Dan often [tweets](https://twitter.com/magic_walnut) about the status of various projects and how to use his software tools. 
+We are a tiny science consultancy. We consist of Dr Daniel Buscombe and Dr Maria Campbell. Our [website](https://www.mardascience.com) is still under development but details some of the work that we do. This is the landing page for Dan's page of software repositories and datasets that concern projects in Machine Learning, Deep Learning, Remote Sensing, Computer Vision, Image Processing, and Geospatial analysis. It gives a more complete picture. Dan often [tweets](https://twitter.com/magic_walnut) about the status of various projects and how to use his software tools. Some teaching resources are hosted through our [Gitlab repository](https://gitlab.com/mardascience).
 
-My other github handle is [dbuscombe-usgs](). I develop codes collaboratively and host them mostly in a range of Github organizations.
+Dan's other github handle is [dbuscombe-usgs](https://github.com/dbuscombe-usgs). He develop codes collaboratively and host them mostly in a range of Github organizations, listed below:
 
 * [Doodleverse](https://github.com/Doodleverse)
 * [DigitalGrainSize](https://github.com/DigitalGrainSize)
@@ -17,7 +17,28 @@ My other github handle is [dbuscombe-usgs](). I develop codes collaboratively an
 * [C-GRASP](https://github.com/C-GRASP)
 
 
-Details below.
+## Contents
+- [Media](#media)
+- [Active Software Projects](#active-software-projects)
+    - [Doodleverse](#doodleverse)
+    - [SediNet](#sedinet)
+    - [OWG](#owg)
+    - [Ping-mapper](#ping-mapper)
+    - [RetinaDamage](#retinadamage)
+    - [GobyNet](#gobynet)
+    - [RegionalGrainSizeModel](#regionalgrainsizemodel)
+    - [prism](#prism)
+    - [PBR filter](#pbr)
+    - [pysesa](#pysesa)
+- [Teaching materials](#teaching-materials)
+    - [ML-Mondays](#ML-Mondays)
+    - [Image Segmentation with UNets](#Image-Segmentation-with-UNets)
+- [Datasets](#datasets)
+    - [Doodleverse Zenodo releases](#Doodleverse-Zenodo-releases)
+    - [Other Zenodo releases](#Other-Zenodo-releases)
+    - [Coast Train](#Coast-Train)
+    - [USGS ScienceBase data releases](#USGS-ScienceBase-data-releases)
+    - [Other data releases](#Other-data-releases)
 
 ## Media
 
@@ -61,40 +82,65 @@ My oceanographic research was featured in an article published in the Journal of
 
 ## Active Software Projects
 
-### Deep-learning based semantic segmentation of geospatial data. 
+### Doodleverse
+
+> Deep-learning based semantic segmentation of geospatial data. 
+
 In the past two years I led the development and now maintain a set of TensorFlow-based tools specifically designed for this task - from developing training data to creating deployment ready models. The set of tools is available on [Github Doodleverse Org.](https://github.com/Doodleverse). I have recently [talked](https://www.youtube.com/watch?v=0I1TOOGfdZ0)about these tools and how they are being [applied](https://www.youtube.com/watch?v=SnmotT2hDn0) in production. 
 
 That work has spawned the development of several downstream applications for specific tasks. For example, I oversee a small team developing satellite-image based shoreline [mapping tools](https://github.com/SatelliteShorelines/CoastSeg) as we work towards a prospectus outlined in a [recent paper](https://doi.org/10.31223/X54P9Z). Another generic toolbox for semantic segmentation of geospatial imagery called [Seg2Map](https://github.com/Doodleverse/seg2map) is in the works.
 
-### Deep-learning based estimation of sediment grain size
+### SediNet
+
+> Deep-learning based estimation of sediment grain size
+
 Several of my model frameworks, including [SediNet](https://github.com/DigitalGrainSize/SediNet), combine to amass a citizen science database of beach sand measurements for the U.S. Army Corps of Engineers, called the [SandSnap project](https://sandsnap-erdcchl.hub.arcgis.com/). SediNet is software for application of deep convolutional neural networks to estimation of quantitative and qualitative properties of sediment in photographic imagery. 
 
 Other (older) software for automated analyses of grain size from images of sediment usign wavelets is also [available](https://github.com/dbuscombe-usgs/pyDGS) and widely used, having amassed several hundred academic paper [citations](https://scholar.google.com/citations?user=bwVl0NwAAAAJ&hl=en).
 
-### Deep-learning based estimation of nearshore ocean wave properties
+### OWG
+
+>Deep-learning based estimation of nearshore ocean wave properties
+
 I research methods to measure surf zone waves from satellite imagery by adapting a [deep learning model framework](https://github.com/OpticalWaveGauging/OpticalWaveGauging_DNN) I developed to larger scales.
 
 Software for application of deep convolutional neural networks to estimation of ocean wave properties from time-series of imagery are available in the [Github Optical Wave Gauging Org.](https://github.com/OpticalWaveGauging)
 
-### Sidescan sonar processing and analysis
+### Ping-mapper
+
+> Sidescan sonar processing and analysis
+
 I have been involved in sidescan sonar processing for a decade. I oversee a software project for reading, processing and analysis of Humminbird sidescan data, called [Ping-mapper]https://github.com/CameronBodine/PINGMapper/). It is based on older software I wrote for for reading, processing and analysis of Humminbird sidescan data. Source code available in Python/Cython [here](https://github.com/dbuscombe-usgs/PyHum) is now archived, having been succeeded by PING-Mapper.
 
-### Deep Learning for estimating damage to buildings due to natural disasters
+### RetinaDamage
+
+> Deep Learning for estimating damage to buildings due to natural disasters
+
 This project trained a [RetinaNet model](https://github.com/CoastalBuildings/HurricaneHarvey_buildingdamage) to detect building damage in Maxar satellite imagery.
 
-### Deep-learning based detection of benthic fish
+### GobyNet
+
+> Deep-learning based detection of benthic fish
+
 I have written software for automated detection of camouflaged benthic fish using models based on RetinaNet and deep residual U-Net. Source code currently available in Python (link soon).
 
-### Machine Learning for estimating beach grain size over regional scales
+### RegionalGrainSizeModel
+
+> Machine Learning for estimating beach grain size over regional scales
+
 This ongoing project uses [boosted regression trees](https://github.com/C-GRASP/RegionalGrainSizeModel) to estimate sand beach grain size over regional scales from a suite of covariates like beach slope, tide, and wave climate.
 
-### Multibeam processing and analysis
+### prism
+
+> Multibeam processing and analysis
+
 Software for probabilistic seafloor habitat mapping using multibeam backscatter. Code [here](https://github.com/dbuscombe-usgs/prism)
 
-### Image analysis
+### PBR-filter
 Novel {P}ansharpening by {B}ackground {R}emoval algorithm for sharpening RGB images. Code [here](https://github.com/dbuscombe-usgs/PBR_filter)
 
-### Point cloud analysis
+### pysesa
+
 Software for spatially explicit analyis of point clouds and spatially distributed data. Code (now archived) is [here](https://github.com/dbuscombe-usgs/pysesa).
 
 
@@ -107,34 +153,30 @@ Teaching materials and software for application of deep convolutional neural net
 
 ### Image Segmentation with UNets
 
-* Check out my ["LearnImageSegmentationWithUnets" Github Org.](https://github.com/LearnImageSegmentationWithUnets)!
+* Check out my ["LearnImageSegmentationWithUnets" Github Org.](https://github.com/LearnImageSegmentationWithUnets)! This links with two online courses hosted using GitLab
+    * [Binary image_segmentation for geosciences](https://mardascience.gitlab.io/binary_image_segmentation_for_geosciences/#/), hosted from this [gitlab repo](https://gitlab.com/mardascience/binary_image_segmentation_for_geosciences)
+    * [Deep learning for landscape classification](https://mardascience.gitlab.io/deep_learning_landscape_classification/#/), hosted from this [gitlab repo](https://gitlab.com/mardascience/deep_learning_landscape_classification)
 
 * I wrote an online course for [Manning Publications](https://www.manning.com/liveproject/monitoring-changes-in-surface-water-using-satellite-image-data) for detection of lakes from Sentinel-2 imagery using deep learning.
 
 
-## Datasets I have made or contributed to
 
-### Zenodo releases
+## Datasets
 
-* Goldstein, E. B., et al. (2022) Segmentation Labels for Emergency Response Imagery from Hurricane Barry, Delta, Dorian, Florence, Isaias, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon (Version v1) [Data set]. Zenodo.
-[link](https://doi.org/10.5281/zenodo.7268083)
+### Doodleverse Zenodo releases
 
-* McFall, M., et al. (2022) The SandSnap Project: 2020 -- 2021 sieved grain-size data and associated sediment imagery (0.0.1) [Data set]. Zenodo.
-[link](https://doi.org/10.5281/zenodo.7063226)
+#### ML models
+* Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7384255)
 
-* Goldstein, E. B., et al. (2022) Labels for Emergency Response Imagery from Hurricane Barry, Delta, Dorian, Florence, Ida, Isaias, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon (2.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7217621)
+* Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 7-band (RGB+NIR+SWIR+NDWI+MNDWI) images of coasts. [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7358284)
 
-* Buscombe, D., et al. (2022) Monthly CDIP:MOP-alongshore modeled wave statistics for California, January 2000 - July 2022 (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6946132
+* Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 1-band MNDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7352850)
 
-* Buscombe, D., et al. (2022) Yearly CDIP:MOP-alongshore modeled wave statistics for California, January 2000 - July 2022 (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6946105
+* Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 1-band NDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7352859)
 
-* Buscombe, D., et al. (2022) Shoreline data at 30-m spatial resolution for 2001 coastal provinces or regions of the world, in geoJSON format. (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6917963
+* Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 5-band (RGB+NIR+SWIR) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7344606)
 
-* Buscombe, D., et al. (2022) Shoreline data at 30-m spatial resolution for 298 coastal counties of the conterminous USA, in geoJSON format. (v0.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7033367
-
-* Buscombe, D., et al. (2022) Labeled Images of Sand and Coins v2 (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6232246
-
-* Buscombe, D., et al. (2022) Preliminary Coastal Grain Size Portal (C-GRASP) dataset. Version 1, January 2022, Zenodo [link](https://zenodo.org/record/5874231#.YeeQbVuIbRZ)
+* Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6950472)
 
 * Buscombe, D. (2022) Doodleverse/Segmentation Zoo Res-UNet models for identifying coins in photos of sediment. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6229579)
 
@@ -146,7 +188,40 @@ Teaching materials and software for application of deep convolutional neural net
 
 * Buscombe, D. (2022) Segmentation Zoo Res-UNet models for Landsat-8 satellite imagery, Coast Train v1 Landsat-8 4-class subset. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6229071)
 
-* Buscombe, D. (2022) Cape Hatteras Landsat8 RGB Images and Labels for Image Segmentation using the program, Segmentation Zoo. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.5895128)
+
+#### Data for ML models
+* Buscombe, D. (2022). Images and 2-class labels for semantic segmentation of Sentinel-2 and Landsat RGB, NIR, and SWIR satellite images of coasts (water, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7384263)
+
+* Buscombe, D. (2022). Images and 2-class labels for semantic segmentation of Sentinel-2 and Landsat RGB satellite images of coasts (water, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7384242)
+
+* Buscombe, D. (2022). Images and 4-class labels for semantic segmentation of Sentinel-2 and Landsat RGB, NIR, and SWIR satellite images of coasts (water, whitewater, sediment, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7344571)
+
+* Buscombe, D, Goldstein, E, Bernier, J., Bosse, S., Colacicco, R., Corak, N., Fitzpatrick, S., del Jesús González Guillén, A., Ku, V., Paprocki, J., Platt, L., Steele, B., Wright, K., & Yasin, B. (2022). Images and 4-class labels for semantic segmentation of Sentinel-2 and Landsat RGB satellite images of coasts (water, whitewater, sediment, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7335647)
+
+* Buscombe, D. (2022). Cape Hatteras Landsat8 RGB Images and Labels for Image Segmentation using the program, Segmentation Zoo (v3.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7232051)
+
+* Buscombe, D., et al. (2022) Labeled Images of Sand and Coins v2 (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6232246)
+
+* Goldstein, E. B., et al. (2022) Segmentation Labels for Emergency Response Imagery from Hurricane Barry, Delta, Dorian, Florence, Isaias, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon (Version v1) [Data set]. Zenodo.
+[link](https://doi.org/10.5281/zenodo.7268083)
+
+
+### Other Zenodo releases
+
+* McFall, M., et al. (2022) The SandSnap Project: 2020 -- 2021 sieved grain-size data and associated sediment imagery (0.0.1) [Data set]. Zenodo.
+[link](https://doi.org/10.5281/zenodo.7063226)
+
+* Goldstein, E. B., et al. (2022) Labels for Emergency Response Imagery from Hurricane Barry, Delta, Dorian, Florence, Ida, Isaias, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon (2.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7217621)
+
+* Buscombe, D., et al. (2022) Monthly CDIP:MOP-alongshore modeled wave statistics for California, January 2000 - July 2022 (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6946132)
+
+* Buscombe, D., et al. (2022) Yearly CDIP:MOP-alongshore modeled wave statistics for California, January 2000 - July 2022 (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6946105)
+
+* Buscombe, D., et al. (2022) Shoreline data at 30-m spatial resolution for 2001 coastal provinces or regions of the world, in geoJSON format. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6917963)
+
+* Buscombe, D., et al. (2022) Shoreline data at 30-m spatial resolution for 298 coastal counties of the conterminous USA, in geoJSON format. (v0.0.1) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7033367)
+
+* Buscombe, D., et al. (2022) Preliminary Coastal Grain Size Portal (C-GRASP) dataset. Version 1, January 2022, Zenodo [link](https://zenodo.org/record/5874231#.YeeQbVuIbRZ)
 
 * Goldstein et al. (2022) Labels for Hurricane Florence (2018) Emergency Response Imagery from NOAA. 10.6084/m9.figshare.11604192.v1 [link](https://figshare.com/articles/dataset/Labels_for_Hurricane_Florence_2018_Emergency_Response_Imagery_from_NOAA/11604192)
 
@@ -172,3 +247,6 @@ Teaching materials and software for application of deep convolutional neural net
 * Kranenburg et al. (2020) Post-Hurricane Florence aerial imagery: Cape Fear to Duck, North Carolina, October 6–8, 2018: U.S. Geological Survey data release. [link](https://coastal.er.usgs.gov/data-release/doi-P91KB9SF/)
 
 * Kasprak et al. (2018) River Valley Sediment Connectivity Data, Colorado River, Grand Canyon, Arizona: U.S. Geological Survey data release. [link](https://doi.org/10.5066/P9SX3MGY/)
+
+### Other data releases
+* Buscombe, D., Goldstein, E. G., Sherwood, C. R., Bodine, C., Favela, J., Fitzpatrick, S., et al. (2022). Dataset accompanying Buscombe et al. Human-in-the-loop segmentation of Earth surface imagery. [link](https://doi.org/10.5061/dryad.2fqz612ps)
