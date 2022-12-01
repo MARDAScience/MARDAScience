@@ -39,12 +39,18 @@ Dan's other github handle is [dbuscombe-usgs](https://github.com/dbuscombe-usgs)
     - [Coast Train](#Coast-Train)
     - [USGS ScienceBase data releases](#USGS-ScienceBase-data-releases)
     - [Other data releases](#Other-data-releases)
+- [Demo Apps](#Demo-Apps)
+    - [Hugging Face](#Hugging-Face)
+    - [Streamlit](#Streamlit)
+
 
 ## Media
 
 > November 2022: CSDMS webinar. 
 
-Part 1 of the 2-part, ``Intro to the Doodleverse'' webinar for the Community Surface Dynamics Modeling System fall webinar series [youtube link](https://youtu.be/BarGUQ5CuA0)
+Part 1 of the 2-part, ``Intro to the Doodleverse'' webinar for the Community Surface Dynamics Modeling System fall webinar series [youtube link](https://youtu.be/BarGUQ5CuA0) concentrates on [Doodler]()
+
+Part 2 of the 2-part, ``Intro to the Doodleverse'' webinar for the Community Surface Dynamics Modeling System fall webinar series [youtube link](https://www.youtube.com/watch?v=mSsUT88IIH8) concentrates on [Segmentation Gym]()
 
 > November 2022: satellite-image-deep-learning Podcast
 
@@ -250,3 +256,21 @@ Teaching materials and software for application of deep convolutional neural net
 
 ### Other data releases
 * Buscombe, D., Goldstein, E. G., Sherwood, C. R., Bodine, C., Favela, J., Fitzpatrick, S., et al. (2022). Dataset accompanying Buscombe et al. Human-in-the-loop segmentation of Earth surface imagery. [link](https://doi.org/10.5061/dryad.2fqz612ps)
+
+## Demo Apps
+
+### Hugging Face
+
+* [sat_5band_4class_7344606](https://huggingface.co/spaces/dbuscombe/sat_5band_4class_7344606): Segment 5-band (R+G+B+NIR+SWIR) satellite imagery into 4 classes (water, whitewater, sediment, other)
+* [sat_RGB_4class_6950472](https://huggingface.co/spaces/dbuscombe/sat_RGB_4class_6950472): Segment 3-band (R+G+B) satellite imagery into 4 classes (water, whitewater, sediment, other)
+* [WaterMasker CA](https://huggingface.co/spaces/dbuscombe/WaterMaskerCA): Segment 3-band (R+G+B) aerial imagery into 2 classes (water, other)
+* [Sandy Coins](https://huggingface.co/spaces/dbuscombe/SandyCoins): Segment 3-band (R+G+B) sediment imagery into 2 classes (sediment, coin)
+* [Digital Grain Size](https://huggingface.co/spaces/dbuscombe/DigitalGrainSize): estimate grain size distribution of 3-band (R+G+B) sediment imagery
+* [Satellite Super Resolution](https://huggingface.co/spaces/dbuscombe/SatelliteSuperResolution): 3x spatial resolution of satellite imagery
+
+### Streamlit
+
+* [Water Masker CA](https://dbuscombe-usgs-watermaskerapp-run-27dt42.streamlit.app/): Segment 3-band (R+G+B) aerial imagery into 2 classes (water, other)
+* [Resize Images](https://dbuscombe-usgs-resizeimages-resize-ijue0d.streamlit.app/): resize 3-band (R+G+B) images
+* [PBR filter](https://dbuscombe-usgs-pbrapp-pbr-57wxr4.streamlit.app/): apply the [PBR filter](https://github.com/dbuscombe-usgs/PBR_filter) to 3-band (R+G+B) imagery
+* [DigitalGrainSize](https://dbuscombe-usgs-dgsapp-run-o114m8.streamlit.app/): estimate grain size distribution of 3-band (R+G+B) sediment imagery
