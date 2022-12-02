@@ -260,9 +260,10 @@ Teaching materials and software for application of deep convolutional neural net
 ## Demo Apps
 
 ### Hugging Face
-
-* [sat_5band_4class_7344606](https://huggingface.co/spaces/dbuscombe/sat_5band_4class_7344606): Segment 5-band (R+G+B+NIR+SWIR) satellite imagery into 4 classes (water, whitewater, sediment, other)
+* [sat_RGB_2class_7384255](https://huggingface.co/spaces/dbuscombe/sat_RGB_2class_7384255): Segment 3-band (R+G+B) satellite imagery into 2 classes (water, other)
 * [sat_RGB_4class_6950472](https://huggingface.co/spaces/dbuscombe/sat_RGB_4class_6950472): Segment 3-band (R+G+B) satellite imagery into 4 classes (water, whitewater, sediment, other)
+* [sat_5band_2class_7388008](https://huggingface.co/spaces/dbuscombe/sat_5band_2class_7388008): Segment 5-band (R+G+B+NIR+SWIR) satellite imagery into 2 classes (water, other)
+* [sat_5band_4class_7344606](https://huggingface.co/spaces/dbuscombe/sat_5band_4class_7344606): Segment 5-band (R+G+B+NIR+SWIR) satellite imagery into 4 classes (water, whitewater, sediment, other)
 * [WaterMasker CA](https://huggingface.co/spaces/dbuscombe/WaterMaskerCA): Segment 3-band (R+G+B) aerial imagery into 2 classes (water, other)
 * [Sandy Coins](https://huggingface.co/spaces/dbuscombe/SandyCoins): Segment 3-band (R+G+B) sediment imagery into 2 classes (sediment, coin)
 * [Digital Grain Size](https://huggingface.co/spaces/dbuscombe/DigitalGrainSize): estimate grain size distribution of 3-band (R+G+B) sediment imagery
