@@ -270,7 +270,7 @@ Teaching materials and software for application of deep convolutional neural net
 * [Satellite Super Resolution](https://huggingface.co/spaces/dbuscombe/SatelliteSuperResolution): 3x spatial resolution of satellite imagery
 
 ### Streamlit
-
+* [Create binary mask](https://dbuscombe-usgs-streamlit-segmentation-app-app-gqqs4o.streamlit.app/): Manually segment 3-band (R+G+B) aerial imagery into 2 classes 
 * [Water Masker CA](https://dbuscombe-usgs-watermaskerapp-run-27dt42.streamlit.app/): Segment 3-band (R+G+B) aerial imagery into 2 classes (water, other)
 * [Resize Images](https://dbuscombe-usgs-resizeimages-resize-ijue0d.streamlit.app/): resize 3-band (R+G+B) images
 * [PBR filter](https://dbuscombe-usgs-pbrapp-pbr-57wxr4.streamlit.app/): apply the [PBR filter](https://github.com/dbuscombe-usgs/PBR_filter) to 3-band (R+G+B) imagery
