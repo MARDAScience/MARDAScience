@@ -94,7 +94,20 @@ My oceanographic research was featured in an article published in the Journal of
 
 In the past two years I led the development and now maintain a set of TensorFlow-based tools specifically designed for this task - from developing training data to creating deployment ready models. The set of tools is available on [Github Doodleverse Org.](https://github.com/Doodleverse). I have recently [talked](https://www.youtube.com/watch?v=0I1TOOGfdZ0)about these tools and how they are being [applied](https://www.youtube.com/watch?v=SnmotT2hDn0) in production. 
 
-That work has spawned the development of several downstream applications for specific tasks. For example, I oversee a small team developing satellite-image based shoreline [mapping tools](https://github.com/SatelliteShorelines/CoastSeg) as we work towards a prospectus outlined in a [recent paper](https://doi.org/10.31223/X54P9Z). Another generic toolbox for semantic segmentation of geospatial imagery called [Seg2Map](https://github.com/Doodleverse/seg2map) is in the works.
+That work has spawned the development of several downstream applications for specific tasks. For example, CoastSeg and Seg2Map described below
+
+### CoastSeg
+
+> An interactive interface to download satellite imagery using CoastSat from Google Earth Engine, extracting shorelines from satellite imagery, and applying segmentation models to satellite imagery
+> A mapping extension for CoastSat using Segmentation Zoo models
+
+In the past year I have overseen a small team developing satellite-image based shoreline [mapping tools](https://github.com/SatelliteShorelines/CoastSeg) as we work towards a prospectus outlined in a [recent paper](https://doi.org/10.31223/X54P9Z). 
+
+
+### Seg2Map
+> An interactive web map app for geospatial label imagery generated within the Doodleverse
+
+Another generic toolbox for semantic segmentation of geospatial imagery is [Seg2Map](https://github.com/Doodleverse/seg2map). Display the imagery on a web map, and apply segmentation models to create labels and maps
 
 ### SediNet
 
@@ -172,8 +185,20 @@ Teaching materials and software for application of deep convolutional neural net
 ### Doodleverse Zenodo releases
 
 #### ML models
-* Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7384255)
 
+##### Current CoastSeg models
+
+###### 2-class (water/other)
+* Buscombe, Daniel. (2023). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 1-band MNDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7557080)
+
+* Buscombe, Daniel. (2023). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 1-band NDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7557072)
+
+* Buscombe, Daniel. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7448405)
+
+* Buscombe, Daniel. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 5-band (RGB+NIR+SWIR) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7448390)
+
+
+###### 4-class (water/whitewater/sediment/other)
 * Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 7-band (RGB+NIR+SWIR+NDWI+MNDWI) images of coasts. [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7358284)
 
 * Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 1-band MNDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7352850)
@@ -184,18 +209,22 @@ Teaching materials and software for application of deep convolutional neural net
 
 * Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6950472)
 
-* Buscombe, D. (2022) Doodleverse/Segmentation Zoo Res-UNet models for identifying coins in photos of sediment. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6229579)
-
-* Buscombe, D. (2022) Doodleverse/Segmentation Zoo UNet models for identifying water in oblique aerial photos of coasts. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6235090)
-
-* Buscombe, D. (2022) Doodleverse/Segmentation Zoo Res-UNet models for identifying water in oblique aerial photos of coasts. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6234122)
+##### Older CoastSeg models
 
 * Buscombe, D. (2022) Segmentation Zoo UNet models for Landsat-8 satellite imagery, Coast Train v1 Landsat-8 4-class subset. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6230083)
 
 * Buscombe, D. (2022) Segmentation Zoo Res-UNet models for Landsat-8 satellite imagery, Coast Train v1 Landsat-8 4-class subset. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6229071)
 
+##### SandSnap models
+* Buscombe, D. (2022) Doodleverse/Segmentation Zoo Res-UNet models for identifying coins in photos of sediment. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6229579)
 
-#### Data for ML models
+##### Watermasking models
+* Buscombe, D. (2022) Doodleverse/Segmentation Zoo UNet models for identifying water in oblique aerial photos of coasts. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6235090)
+
+* Buscombe, D. (2022) Doodleverse/Segmentation Zoo Res-UNet models for identifying water in oblique aerial photos of coasts. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6234122)
+
+
+#### Labeled imagery for segmentation models
 * Buscombe, D. (2022). Images and 2-class labels for semantic segmentation of Sentinel-2 and Landsat RGB, NIR, and SWIR satellite images of coasts (water, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7384263)
 
 * Buscombe, D. (2022). Images and 2-class labels for semantic segmentation of Sentinel-2 and Landsat RGB satellite images of coasts (water, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7384242)
@@ -212,7 +241,7 @@ Teaching materials and software for application of deep convolutional neural net
 [link](https://doi.org/10.5281/zenodo.7268083)
 
 
-### Other Zenodo releases
+### Other Zenodo dataset releases
 
 * McFall, M., et al. (2022) The SandSnap Project: 2020 -- 2021 sieved grain-size data and associated sediment imagery (0.0.1) [Data set]. Zenodo.
 [link](https://doi.org/10.5281/zenodo.7063226)
@@ -237,8 +266,6 @@ Teaching materials and software for application of deep convolutional neural net
 ### Coast Train
 
 * Wernette, P., et al. (2022) Coast Train--Labeled imagery for training and evaluation of data-driven models for image segmentation: U.S. Geological Survey data release, [link](https://doi.org/10.5066/P91NP87I). Check out the [website](https://coasttrain.github.io/CoastTrain/) for more details.
-
-* Buscombe, D., et al. (2022) Dataset accompanying Buscombe et al.: Human-in-the-loop segmentation of earth surface imagery, Dryad, Dataset. [link](https://doi.org/10.5061/dryad.2fqz612ps)
 
 ### USGS ScienceBase data releases
 
