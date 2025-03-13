@@ -1,12 +1,19 @@
 # Marda Science
 
-We are a tiny science consultancy. We consist of Dr Daniel Buscombe and Dr Maria Campbell. Our [website](https://www.mardascience.com) is still under development but details some of the work that we do. This is the landing page for Dan's page of software repositories and datasets that concern projects in Machine Learning, Deep Learning, Remote Sensing, Computer Vision, Image Processing, and Geospatial analysis. It gives a more complete picture. Dan often [tweets](https://twitter.com/magic_walnut) about the status of various projects and how to use his software tools. Some teaching resources are hosted through our [Gitlab repository](https://gitlab.com/mardascience).
+We are a tiny consultancy in environmental analytics and research, specializing in coastal, marine, and river environments. 
 
-Dan's other github handle is [dbuscombe-usgs](https://github.com/dbuscombe-usgs). He develop codes collaboratively and host them mostly in a range of Github organizations, listed below:
+* We specialize in ML/Geospatial/Algorithm/Software for environmental science, engineering and management. 
+* We conduct research and development of novel measurements and insights from data-driven analyses involving artificial intelligence, computer vision, and/or numerical modeling. 
+* We develop scalable automated workflows for extracting information from a plethora of environmental, geophysical, oceanographic, geological and ecological data.
 
+We consist of Dr Daniel Buscombe and Dr Maria Campbell. This is the landing page for Dan's page of software repositories and datasets that concern projects in Machine Learning, Deep Learning, Remote Sensing, Computer Vision, Image Processing, Sonar Processing, Numerical Modeling, and Geospatial analysis. It gives a more complete picture than our [website](https://www.mardascience.com). Some teaching resources are hosted through our [Gitlab repository](https://gitlab.com/mardascience). See also Dan's [youtube page](https://www.youtube.com/channel/UCBHQ3JZvdDEjNVUNEuP7Xeg). Dan's other github handle is [dbuscombe-usgs](https://github.com/dbuscombe-usgs). He often develop codes collaboratively and host them mostly in a range of Github organizations, listed below:
+
+Active:
 * [Doodleverse](https://github.com/Doodleverse)
 * [DigitalGrainSize](https://github.com/DigitalGrainSize)
 * [SatelliteShorelines](https://github.com/SatelliteShorelines)
+
+Inactive:
 * [BenthicSubstrateMapping](https://github.com/BenthicSubstrateMapping)
 * [CoastTrain](https://github.com/CoastTrain)
 * [LearnImageSegmentationWithUnets](https://github.com/LearnImageSegmentationWithUnets)
@@ -19,16 +26,19 @@ Dan's other github handle is [dbuscombe-usgs](https://github.com/dbuscombe-usgs)
 
 ## Contents
 - [Media](#media)
-- [Active Software Projects](#active-software-projects)
+- [Active FOSS Projects](#active-software-projects)
     - [Doodleverse](#doodleverse)
     - [CoastSeg](#coastseg)
-    - [Seg2Map](#seg2map)
-    - [SediNet](#sedinet)
-    - [OWG](#owg)
+    - [SDSTools](#sdstools)
+    - [RUSH](#rush)
     - [Ping-mapper](#ping-mapper)
+    - [RegionalGrainSizeModel](#regionalgrainsizemodel)
+- [Inactive FOSS Projects](#active-software-projects)
+    - [SediNet](#sedinet)
+    - [Seg2Map](#seg2map)
+    - [OWG](#owg)
     - [RetinaDamage](#retinadamage)
     - [GobyNet](#gobynet)
-    - [RegionalGrainSizeModel](#regionalgrainsizemodel)
     - [prism](#prism)
     - [PBR filter](#pbr)
     - [pysesa](#pysesa)
@@ -90,11 +100,24 @@ My oceanographic research was featured in an article published in the Journal of
 
 ## Active Software Projects
 
+### RUSH
+
+> RUSH: Rapid Remote Sensing Updates of landcover for Storm and Hurricane forecasts
+
+Written by Winston Cheang, USGS WGSC | ccheang@usgs.gov, with support from Daniel Buscombe and others. See the software [available here](https://code.usgs.gov/western-geographic-science-center-public/a-tool-for-rapid-repeat-high-resolution-coastal-vegetation-maps-to-improve-forecasting-of-hurricane-impacts-and-coastal-resilience)
+
+
+### SDSTools
+
+> A python toolkit for SDS data post-processing, analysis, and visualization.
+
+In the past year I have overseen a small team developing satellite-image based shoreline [mapping tools](https://github.com/SatelliteShorelines/CoastSeg) as we work towards a prospectus outlined in a [recent paper](https://doi.org/10.31223/X54P9Z). 
+
 ### Doodleverse
 
 > Deep-learning based semantic segmentation of geospatial data. 
 
-In the past two years I led the development and now maintain a set of TensorFlow-based tools specifically designed for this task - from developing training data to creating deployment ready models. The set of tools is available on [Github Doodleverse Org.](https://github.com/Doodleverse). I have recently [talked](https://www.youtube.com/watch?v=0I1TOOGfdZ0)about these tools and how they are being [applied](https://www.youtube.com/watch?v=SnmotT2hDn0) in production. 
+In the past two years I led the development and now maintain a set of TensorFlow-based tools specifically designed for this task - from developing training data to creating deployment ready models. The set of tools is available on [Github Doodleverse Org.](https://github.com/Doodleverse). I have recently [talked](https://www.youtube.com/watch?v=0I1TOOGfdZ0) about these tools and how they are being [applied](https://www.youtube.com/watch?v=SnmotT2hDn0) in production. 
 
 That work has spawned the development of several downstream applications for specific tasks. For example, CoastSeg and Seg2Map described below
 
@@ -105,6 +128,20 @@ That work has spawned the development of several downstream applications for spe
 
 In the past year I have overseen a small team developing satellite-image based shoreline [mapping tools](https://github.com/SatelliteShorelines/CoastSeg) as we work towards a prospectus outlined in a [recent paper](https://doi.org/10.31223/X54P9Z). 
 
+### Ping-mapper
+
+> Sidescan sonar processing and analysis
+
+I have been involved in sidescan sonar processing for a decade. I oversee a software project for reading, processing and analysis of Humminbird sidescan data, called [Ping-mapper]https://github.com/CameronBodine/PINGMapper/). It is based on older software I wrote for for reading, processing and analysis of Humminbird sidescan data. Source code available in Python/Cython [here](https://github.com/dbuscombe-usgs/PyHum) is now archived, having been succeeded by PING-Mapper.
+
+### RegionalGrainSizeModel
+
+> Machine Learning for estimating beach grain size over regional scales
+
+This ongoing project uses [boosted regression trees](https://github.com/C-GRASP/RegionalGrainSizeModel) to estimate sand beach grain size over regional scales from a suite of covariates like beach slope, tide, and wave climate.
+
+
+## Inactive Software Projects
 
 ### Seg2Map
 > An interactive web map app for geospatial label imagery generated within the Doodleverse
@@ -127,12 +164,6 @@ I research methods to measure surf zone waves from satellite imagery by adapting
 
 Software for application of deep convolutional neural networks to estimation of ocean wave properties from time-series of imagery are available in the [Github Optical Wave Gauging Org.](https://github.com/OpticalWaveGauging)
 
-### Ping-mapper
-
-> Sidescan sonar processing and analysis
-
-I have been involved in sidescan sonar processing for a decade. I oversee a software project for reading, processing and analysis of Humminbird sidescan data, called [Ping-mapper]https://github.com/CameronBodine/PINGMapper/). It is based on older software I wrote for for reading, processing and analysis of Humminbird sidescan data. Source code available in Python/Cython [here](https://github.com/dbuscombe-usgs/PyHum) is now archived, having been succeeded by PING-Mapper.
-
 ### RetinaDamage
 
 > Deep Learning for estimating damage to buildings due to natural disasters
@@ -144,12 +175,6 @@ This project trained a [RetinaNet model](https://github.com/CoastalBuildings/Hur
 > Deep-learning based detection of benthic fish
 
 I have written software for automated detection of camouflaged benthic fish using models based on RetinaNet and deep residual U-Net. Source code currently available in Python (link soon).
-
-### RegionalGrainSizeModel
-
-> Machine Learning for estimating beach grain size over regional scales
-
-This ongoing project uses [boosted regression trees](https://github.com/C-GRASP/RegionalGrainSizeModel) to estimate sand beach grain size over regional scales from a suite of covariates like beach slope, tide, and wave climate.
 
 ### prism
 
@@ -182,7 +207,7 @@ Teaching materials and software for application of deep convolutional neural net
 
 
 
-## Datasets
+## Published datasets and models
 
 ### Doodleverse Zenodo releases
 
@@ -213,17 +238,36 @@ Teaching materials and software for application of deep convolutional neural net
 
 ##### Current CoastSeg models
 
-###### 2-class (water/other)
-* Buscombe, Daniel. (2023). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 1-band MNDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7557080)
+* Buscombe, D. (2024) Doodleverse Segformer models for 4-class (sand, gravel, cobble and other) segmentation of visible-band (RGB) images of coastal sediments. (v2.0). Zenodo. https://doi.org/10.5281/zenodo.14502461 \href{https://doi.org/10.5281/zenodo.14502461}{link}}
 
-* Buscombe, Daniel. (2023). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 1-band NDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7557072)
+* Buscombe, D. (2024) Doodleverse Segformer models for 2-class (water, nowater) segmentation of visible-band (RGB) oblique high-resolution aerial imagery of coasts (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14201557 \href{https://doi.org/10.5281/zenodo.14201557}{link}}
 
-* Buscombe, Daniel. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7448405)
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of PlanetScope, Sentinel-2 and Landsat-5/7/8/9 NDWI images of coasts. 'Non-validation sites' version. (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14194496 \href{https://doi.org/10.5281/zenodo.14194496}{link}}
 
-* Buscombe, Daniel. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 5-band (RGB+NIR+SWIR) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7448390)
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of PlanetScope, Sentinel-2 and Landsat-5/7/8/9 MNDWI images of coasts. 'Alaska-only' version. (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14187478 \href{https://doi.org/10.5281/zenodo.14187478}{link}}
 
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of PlanetScope, Sentinel-2 and Landsat-5/7/8/9 visible-band (RGB) images of coasts. 'Non-validation sites' version. (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14187880 \href{https://doi.org/10.5281/zenodo.14187880}{link}}
 
-###### 4-class (water/whitewater/sediment/other)
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of PlanetScope, Sentinel-2 and Landsat-5/7/8/9 MNDWI images of coasts. 'Global' version. (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14183366 [link](https://doi.org/10.5281/zenodo.14183366)
+
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of PlanetScope, Sentinel-2 and Landsat-5/7/8/9 NDWI images of coasts. 'Alaska-only' version. (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14183210  [link](https://doi.org/10.5281/zenodo.14183210)
+
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of PlanetScope, Sentinel-2 and Landsat-5/7/8/9 NDWI images of coasts. 'Global' version. (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14172182 [link](https://doi.org/10.5281/zenodo.14172182)
+
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of PlanetScope, Sentinel-2 and Landsat-5/7/8/9 visible-band (RGB) images of coasts. 'Alaska-only' version. Zenodo. https://doi.org/10.5281/zenodo.14037041 [link](https://doi.org/10.5281/zenodo.14037041)
+
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of PlanetScope, Sentinel-2 and Landsat-5/7/8/9 visible-band (RGB) images of coasts. 'Global' version. Zenodo. https://doi.org/10.5281/zenodo.14036903 [link](https://doi.org/10.5281/zenodo.14036903)
+
+* Buscombe, D. (2024) Doodleverse/Segmentation Gym SegFormer models for 2-class (water, other) segmentation of greyscale CoastCam runup timestack imagery (v1.0). Zenodo. https://doi.org/10.5281/zenodo.11167477 [link](https://doi.org/10.5281/zenodo.11167477)
+
+* Buscombe, D. (2023) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 MNDWI images of coasts. (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8213443 [link](https://doi.org/10.5281/zenodo.8213443)
+
+* Buscombe, D. (2023) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 NDWI images of coasts. (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8213427 [link](https://doi.org/10.5281/zenodo.8213427)
+
+* Buscombe, D. (2024) Doodleverse/CoastSeg Segformer models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8190958 [link](https://doi.org/10.5281/zenodo.8190958)
+
+##### Older CoastSeg models
+
 * Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 7-band (RGB+NIR+SWIR+NDWI+MNDWI) images of coasts. [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7358284)
 
 * Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 1-band MNDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7352850)
@@ -234,7 +278,13 @@ Teaching materials and software for application of deep convolutional neural net
 
 * Buscombe, D. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 4-class (water, whitewater, sediment and other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6950472)
 
-##### Older CoastSeg models
+* Buscombe, Daniel. (2023). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 1-band MNDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7557080)
+
+* Buscombe, Daniel. (2023). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 1-band NDWI images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7557072)
+
+* Buscombe, Daniel. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 3-band (RGB) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7448405)
+
+* Buscombe, Daniel. (2022). Doodleverse/Segmentation Zoo Res-UNet models for 2-class (water, other) segmentation of Sentinel-2 and Landsat-7/8 5-band (RGB+NIR+SWIR) images of coasts. (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7448390)
 
 * Buscombe, D. (2022) Segmentation Zoo UNet models for Landsat-8 satellite imagery, Coast Train v1 Landsat-8 4-class subset. (v1.0.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.6230083)
 
@@ -250,6 +300,10 @@ Teaching materials and software for application of deep convolutional neural net
 
 
 #### Labeled imagery for segmentation models
+* Buscombe, D., Lundine, M.A., Janda, C.N., \& Batiste, S. (2025) Labeled satellite imagery for training machine learning semantic segmentation models of coastal shorelines. U.S. Geological Survey Data Release 10.5066/P13EOBZQ [link](https://doi.org/10.5066/P13EOBZQ)
+
+* Buscombe, D. (2023) June 2023 Supplement Images and 4-class labels for semantic segmentation of Sentinel-2 and Landsat RGB, NIR, and SWIR satellite images of coasts (water, whitewater, sediment, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.8011926)
+
 * Buscombe, D. (2022). Images and 2-class labels for semantic segmentation of Sentinel-2 and Landsat RGB, NIR, and SWIR satellite images of coasts (water, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7384263)
 
 * Buscombe, D. (2022). Images and 2-class labels for semantic segmentation of Sentinel-2 and Landsat RGB satellite images of coasts (water, other) (v1.0) [Data set]. Zenodo. [link](https://doi.org/10.5281/zenodo.7384242)
@@ -265,8 +319,26 @@ Teaching materials and software for application of deep convolutional neural net
 * Goldstein, E. B., et al. (2022) Segmentation Labels for Emergency Response Imagery from Hurricane Barry, Delta, Dorian, Florence, Isaias, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon (Version v1) [Data set]. Zenodo.
 [link](https://doi.org/10.5281/zenodo.7268083)
 
+* Lima et al. (2020) Semantic Segmentation of Time Series Imagery Using Deep Convolutional Neural Networks: A Case Study of Sandbars in Grand Canyon (Version 2) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.4302747 [link](https://doi.org/10.5281/zenodo.4302747)
+
 
 ### Other Zenodo dataset releases
+
+* Buscombe, D., \& Gómez de la Peña, E. (2025) "Tiny deep learning" model used for sand beach shoreline forecasting (v1.0). Zenodo. https://doi.org/10.5281/zenodo.15003139 [link](https://doi.org/10.5281/zenodo.15003139)
+
+* Buscombe, D. (2024) Doodleverse Segformer models for 2-class (scalebar and other) segmentation of visible-band (RGB) images of coastal sediments. (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14502652 \href{https://doi.org/10.5281/zenodo.14502652}{link}}
+
+* Buscombe, D., Campbell, M. (2024) Median Grain Diameter of Beaches in the Pacific North West, February 2021 to December 2023 (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.10467331 [link](https://doi.org/10.5281/zenodo.10467331)
+
+* Buscombe, D., Fitzpatrick, S. (2024) CoastSeg: Beach transects and beachface slope database v1.0 (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8187949 [link](https://doi.org/10.5281/zenodo.8187949)
+
+* Buscombe, D. (2023) CoastSeg: 30-m atlas of the coastal shoreline attributes of California, in geoJSON format. (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8180524 [link](https://doi.org/10.5281/zenodo.8180524)
+
+* Buscombe, D. (2023) Labeled high-resolution orthoimagery time-series of an alluvial river corridor; Elwha River, Washington, USA. (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.10155783 [link](https://doi.org/10.5281/zenodo.10155783)
+
+* Buscombe, D. (2022) Shoreline data at 30-m spatial resolution for 2001 coastal provinces or regions of the world, in geoJSON format. (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6917963 [link](https://doi.org/10.5281/zenodo.6946132)
+
+* Buscombe, D. et al. (2022) Preliminary Coastal Grain Size Portal (C-GRASP) dataset. Version 1, January 2022, Zenodo https://doi.org/10.5281/zenodo.6099266 [link](https://doi.org/10.5281/zenodo.6099266)
 
 * McFall, M., et al. (2022) The SandSnap Project: 2020 -- 2021 sieved grain-size data and associated sediment imagery (0.0.1) [Data set]. Zenodo.
 [link](https://doi.org/10.5281/zenodo.7063226)
@@ -289,10 +361,27 @@ Teaching materials and software for application of deep convolutional neural net
 
 
 ### Coast Train
-
 * Wernette, P., et al. (2022) Coast Train--Labeled imagery for training and evaluation of data-driven models for image segmentation: U.S. Geological Survey data release, [link](https://doi.org/10.5066/P91NP87I). Check out the [website](https://coasttrain.github.io/CoastTrain/) for more details.
 
-### USGS ScienceBase data releases
+
+### Other USGS ScienceBase data releases
+* Buscombe, D., Lundine, M.A., Janda, C.N., \& Batiste, S. (2025, in review) Labeled satellite imagery for training machine learning models that predict the suitability of semantic segmentation model outputs for shoreline extraction. U.S. Geological Survey Data Release 10.5066/P1N4VI7H [link](https://doi.org/10.5066/P1N4VI7H)
+
+* Buscombe, D., Lundine, M.A., Janda, C.N., \& Batiste, S. (2025, in review) Labeled satellite imagery for training machine learning models that predict the suitability of imagery for shoreline extraction. U.S. Geological Survey Data Release 10.5066/P14MDKVJ [link](https://doi.org/10.5066/P14MDKVJ)
+
+* Buscombe, D. et al. [2025, in prep] Satellite-derived shorelines for the U.S. states of Oregon and Washington for the period 1984-2023, obtained using CoastSat, U.S. Geological Survey data release.
+
+* Buscombe, D. et al. (2025) Satellite-derived shorelines from CoastSeg in multiple U.S. locations (1984-2023): U.S. Geological Survey data release, https://doi.org/10.5066/P1NUEFDP. [link](https://doi.org/10.5066/P1NUEFDP)
+
+* Warrick, J.A., Buscombe, D. (2025) Data to Support Analyses of Shoreline Seasonal Cycles for Beaches of California: U.S. Geological Survey data release, https://doi.org/10.5066/P14WWHOJ. [link](https://doi.org/10.5066/P14WWHOJ)
+
+* Janda, C.N. et al. (2025) Shoreline Change of Western Long Island, New York from Satellite Derived Shorelines: U.S. Geological Survey data release, https://doi.org/10.5066/P14VFVGZ. [link](https://doi.org/10.5066/P14VFVGZ)
+
+* Buscombe, D. et al. (2024) Satellite-derived shorelines for the U.S. Gulf Coast states of Texas, Louisiana, Mississippi, and Florida for the period 1984-2022, obtained using CoastSat, U.S. Geological Survey data release, https://doi.org/10.5066/P1WFZXDM. [link](https://doi.org/10.5066/P1WFZXDM)
+
+* Ritchie, A.C. et al. (2023) Remote Sensing Coastal Change Simple Data Distribution Service: U.S. Geological Survey data service, https://doi.org/10.5066/P9M3NYWI [link](https://doi.org/10.5066/P9M3NYWI)
+
+* Ritchie, A.C. et al. (2022) Unprocessed aerial imagery from 9 December 2015 coastal survey of Central California.: U.S. Geological Survey data release, https://doi.org/10.5066/P9M3NYWI. [link](https://doi.org/10.5066/P9M3NYWI)
 
 * Ritchie, M., et al. (2022) Aerial photogrammetry data and products of the North Carolina coast: U.S. Geological Survey data release. [link](https://doi.org/10.5066/P9K3TWY7)
 
